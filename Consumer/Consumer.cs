@@ -7,6 +7,9 @@ public class Consumer
 {
     private static void Main(string[] args)
     {
-
+        ConnectionFactory factory = new ConnectionFactory()
+        {
+            HostName = "localhost"
+        };
     }
 }
