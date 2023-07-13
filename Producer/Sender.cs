@@ -1,7 +1,14 @@
-﻿public class Sender
+﻿using RabbitMQ.Client;
+
+public class Sender
 {
     private static void Main()
     {
-        Console.WriteLine("Hello, World!");
+        ConnectionFactory factory = new()
+        {
+            HostName = "localhost"
+        };
+
+        using var connection = factory.CreateConnection();
     }
 }
