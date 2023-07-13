@@ -1,4 +1,5 @@
-﻿using RabbitMQ.Client;
+﻿using System.Text;
+using RabbitMQ.Client;
 
 public class Sender
 {
@@ -15,6 +16,7 @@ public class Sender
         {
             channel.QueueDeclare("Basic Test", false, false, false, null);
             string message = "Getting started with .Net Core RabbitMQ";
+            var body = Encoding.UTF8.GetBytes(message);
         };
     }
 }
