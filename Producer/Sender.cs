@@ -1,6 +1,8 @@
 ﻿using System.Text;
 using RabbitMQ.Client;
 
+namespace Sender;
+
 public class Sender
 {
     private static void Main()
