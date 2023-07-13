@@ -21,4 +21,7 @@ public class Sender
             Console.WriteLine("Sent message {0}...", message);
             ;
         }
+
+        Console.WriteLine("Press [enter] to exit the Sender App...");
+    }
 }
