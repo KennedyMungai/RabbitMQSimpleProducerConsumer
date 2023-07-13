@@ -23,5 +23,6 @@ public class Sender
         }
 
         Console.WriteLine("Press [enter] to exit the Sender App...");
+        Console.ReadLine();
     }
 }
