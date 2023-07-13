@@ -14,6 +14,7 @@ public class Sender
         using (var channel = connection.CreateModel())
         {
             channel.QueueDeclare("Basic Test", false, false, false, null);
+            string message = "Getting started with .Net Core RabbitMQ";
         };
     }
 }
