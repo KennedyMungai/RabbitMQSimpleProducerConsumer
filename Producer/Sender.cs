@@ -10,5 +10,10 @@ public class Sender
         };
 
         using var connection = factory.CreateConnection();
+
+        using (var channel = connection.CreateModel())
+        {
+            channel.QueueDeclare("Basic Test", false, false, false, null);
+        };
     }
 }
