@@ -26,6 +26,8 @@ public class Consumer
                 Console.WriteLine("Received message {0}...", message);
                 ;
             };
+
+            channel.BasicConsume("BasicTest", true, consumer);
         };
     }
 }
