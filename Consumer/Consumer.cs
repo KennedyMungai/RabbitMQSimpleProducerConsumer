@@ -28,6 +28,9 @@ public class Consumer
             };
 
             channel.BasicConsume("BasicTest", true, consumer);
+
+            Console.WriteLine("Press [enter] to exit the Consumer App...");
+            Console.ReadLine();
         };
     }
 }
